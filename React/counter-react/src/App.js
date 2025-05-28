@@ -19,7 +19,7 @@ function App() {
 
     return (
     <div className="App">
-        <button onClick={increase}>Increment</button>
+        <button style={{margin:'20px'}} onClick={increase}>Increment</button>
         <button onClick={decrease}>Decrement</button>
         <br />
         <button onClick={reset}>Reset</button>
