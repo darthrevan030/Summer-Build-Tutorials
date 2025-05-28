@@ -19,10 +19,10 @@ function App() {
 
     return (
     <div className="App">
-        <button style={{margin:'20px'}} onClick={increase}>Increment</button>
-        <button onClick={decrease}>Decrement</button>
+        <button style={{marginTop:'20px', marginRight:'20px'}} onClick={increase}>Increment</button>
+        <button style={{marginLeft:'20px'}} onClick={decrease}>Decrement</button>
         <br />
-        <button onClick={reset}>Reset</button>
+        <button style={{margin:'20px', marginLeft:'15px'}} onClick={reset}>Reset</button>
         <h1 className={`counter-${counter > 0 ? "positive" : "negative"}`}
         style={{fontSize: 12 + counter*counter}}>{counter}
         </h1>
