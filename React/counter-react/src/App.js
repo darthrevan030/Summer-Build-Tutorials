@@ -19,7 +19,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{counter}</h1>
+      <h1 className={`counter-${counter > 0 ? "positive" : "negative"}`}
+        style={{fontSize: 12 + counter*counter}}>{counter}
+      </h1>
       <button onClick={increase}>Increment</button>
       <button onClick={decrease}>Decrement</button>
       <br />
@@ -27,6 +29,7 @@ function App() {
       <div className="message">
         {counter === 0 && <p>Let's go!!!!!</p>}
         {counter > 0 && counter <= 5 && <p>Just getting started...</p>}
+        {counter < 0 && <p>Wrong way!!!</p>}
       </div>
     </div>
   );
