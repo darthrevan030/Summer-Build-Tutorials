@@ -24,6 +24,10 @@ function App() {
       <button onClick={decrease}>Decrement</button>
       <br />
       <button onClick={reset}>Reset</button>
+      <div className="message">
+        {counter === 0 && <p>Let's go!!!!!</p>}
+        {counter > 0 && counter <= 5 && <p>Just getting started...</p>}
+      </div>
     </div>
   );
 }
